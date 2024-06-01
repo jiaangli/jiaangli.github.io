@@ -5,7 +5,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-7580334-2');
+    gtag('config', 'UA-131560165-1');
     </script>
 
     <title>Jiaang Li</title>
@@ -30,15 +30,15 @@
                             <p style="text-align:center">
                             <name>Jiaang Li</name>
                             </p>
-                            <p>I am Jiaang Li, a reasearch assistant at University of Copenhagen (<a href="https://coastalcph.github.io/">CoAStaL NLP group</a>), advised by Professor <a href="https://anderssoegaard.github.io/">Anders Søgaard</a>.</p>
-                            <p>Previously I obtained my MSc in Computer Science at the University of Copenhagen.</p> 
+                            I'm an <a href="https://ellis.eu/">ELLIS</a> PhD student at the <a href="https://www.aicentre.dk/">Pioneer Centre for Artificial Intelligence</a>. I'm honored to be advised by Prof. <a href="https://sergebelongie.github.io/">Serge Belongie</a> at <a href="https://di.ku.dk/english/">University of Copenhagen</a>. Previously I spent two wonderful years at <a href="https://coastalcph.github.io/">CoAStaL</a>, advised by Prof. <a href="https://anderssoegaard.github.io/">Anders Søgaard</a>, and received my Master's degree in Computer Science at the <a href="https://di.ku.dk/english/">University of Copenhagen</a>.</p> 
+                            
                             <p style="text-align:center">
-                            <a href="mailto:jli@hum.ku.dk">Email</a> &nbsp/&nbsp
-                            <a href="https://scholar.google.com.sg/citations?user=RTmTPqQAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
+                            <a href="mailto:jili@di.ku.dk">Email</a> &nbsp/&nbsp
+                            <a href="https://scholar.google.com/citations?user=RTmTPqQAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                             <a href="https://www.semanticscholar.org/author/Jiaang-Li/2261336713">Semantic Scholar</a> &nbsp/&nbsp
                             <a href="https://github.com/jiaangli">Github</a> &nbsp/&nbsp
                             <a href="https://www.linkedin.com/in/jiaangli/?locale=en_US">LinkedIn</a> &nbsp/&nbsp
-                            <a href="https://twitter.com/JIAANGLI">Twitter</a>
+                            <a href="https://x.com/JIAANGLI">Twitter</a>
                             <!-- <a href="https://www.zhihu.com/people/">Zhihu (知乎)</a> -->
                             </p>
                         </td>
@@ -54,6 +54,7 @@
                         <td style="padding:20px;width:100%;vertical-align:middle">
                         <heading><font color="red">News</font></heading>
                         <ul>
+                            <li>May. 2024 - One paper accepted to <a href="https://2024.aclweb.org/"> ACL 2024</a></b></li> 
                             <li>Nov. 2023 - One paper accepted to <a href="https://www.sciencedirect.com/journal/expert-systems-with-applications"> ESWA 2023</a></b></li> 
                             <li>Oct. 2023 - One paper accepted to <a href="https://www.neurreps.org/about">NeurReps@NeurIPS 2023</a></b></li> 
                             <li>Oct. 2023 - One paper accepted to <a href="https://2023.emnlp.org/">EMNLP 2023</a></b></li> 
@@ -70,8 +71,9 @@
                             <td style="padding:20px;width:100%;vertical-align:middle">
                                 <heading>Research</heading>
                                 <p>
-                                    My interests revolve around the convergence of machine learning, natural language processing, and computer vision, with a focus on gaining insights into human cognition. I am enthusiastic about exploring language grounding within multimodal contexts and investigating the linguistic and cognitive characteristics of these models.
-                                    Representative papers are <span class="highlight">highlighted</span>.
+                                    My interests revolve around the convergence of natural language processing and computer vision, with a focus on gaining insights from human cognition. I am enthusiastic about exploring language grounding within multimodal contexts and investigating the linguistic and cognitive characteristics of models.
+                                    Representative papers are <span class="highlight">highlighted</span>. 
+                                    <span class="note">(*: Equal Contribution)</span>
                                 </p>
                             </td>
                         </tr>
@@ -117,14 +119,16 @@
                         <papertitle>${paper.title}</papertitle>
                     </a>
                     <br>
+                    <span class="note">
                     ${paper.authors}
+                    </span>
                     <br>
-                    <em>${paper.publicationPlatform}</em>, ${paper.publicationDate} &nbsp
-                    <!-- <font color="red"><strong>(Oral Presentation, Best Paper Finalist - Top 0.4%)</strong></font> -->
+                    <strong>${paper.publicationPlatform}</strong>, ${paper.publicationDate} &nbsp
+                    <strong><font color="red">${paper.comments}</font></strong>
                     <br>
                 </p>
                 <div class="paper">
-                    <a href="${paper.codeLink}"> ${paper.linkName} </a>
+                    ${paper.otherLinks}
                 </div>
             </td>
         `;

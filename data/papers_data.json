@@ -4,21 +4,43 @@
 		"title": "Do Vision and Language Models Share Concepts? A Vector Space Alignment Study",
 		"url": "https://arxiv.org/pdf/2302.06555.pdf",
 		"authors": "<strong>Jiaang Li</strong>, Yova Kementchedjhieva, Constanza Fierro, Anders Søgaard",
-		"publicationPlatform": "arXiv",
+		"publicationPlatform": "Preprint",
 		"publicationDate": "2023",
-		"codeLink": "",
-		"linkName": "code & dataset (coming soon)",
+		"otherLinks": "<a href=''> code & dataset (coming soon) </a>",
+		"comments": "",
 		"representation":"#ffffd0"
+    },
+	{
+		"image": "images/wenyan2024robcap.jpg",
+		"title": "Understanding Retrieval Robustness for Retrieval-Augmented Image Captioning",
+		"url": "",
+		"authors": "Wenyan Li, <strong>Jiaang Li</strong>, Rita Ramos, Raphael Tang, Desmond Elliott",
+		"publicationPlatform": "ACL",
+		"publicationDate": "2024",
+		"otherLinks": "",
+		"comments": "",
+		"representation":"#FFFFFF"
+    },
+	{
+		"image": "images/fierro2024does.jpg",
+		"title": "Does Instruction Tuning Make LLMs More Consistent?",
+		"url": "https://arxiv.org/abs/2404.15206",
+		"authors": "Constanza Fierro, <strong>Jiaang Li</strong>, Anders Søgaard",
+		"publicationPlatform": "Preprint",
+		"publicationDate": "2024",
+		"otherLinks": "",
+		"comments": "",
+		"representation":"#FFFFFF"
     },
     {
 		"image": "images/yong2024gpt4v.jpg",
 		"title": "Exploring Visual Culture Awareness in GPT-4V: A Comprehensive Probing",
 		"url": "https://arxiv.org/abs/2402.06015",
 		"authors": "Yong Cao, Wenyan Li, <strong>Jiaang Li</strong>, Yifei Yuan, Daniel Hershcovich",
-		"publicationPlatform": "arXiv",
+		"publicationPlatform": "Preprint",
 		"publicationDate": "2024",
-		"codeLink": "",
-		"linkName": "",
+		"otherLinks": "",
+		"comments": "",
 		"representation":"#FFFFFF"
     },
     {
@@ -28,8 +50,8 @@
 		"authors": "Antonia Karamolegkou*, <strong>Jiaang Li*</strong>, Li Zhou, Anders Søgaard",
 		"publicationPlatform": "EMNLP",
 		"publicationDate": "2023",
-		"codeLink": "https://github.com/coastalcph/CopyrightLLMs",
-		"linkName": "code",
+		"otherLinks": "<a href='https://github.com/coastalcph/CopyrightLLMs'> code </a>",
+		"comments": "",
 		"representation":"#ffffd0"
     },
 	{
@@ -39,8 +61,8 @@
 		"authors": "<strong>Jiaang Li*</strong>, Antonia Karamolegkou*, Yova Kementchedjhieva, Mostafa Abdou, Sune Lehmann, Anders Søgaard",
 		"publicationPlatform": "NeurReps @ NeurIPS",
 		"publicationDate": "2023",
-		"codeLink": "https://github.com/coastalcph/brainlm",
-		"linkName": "code",
+		"otherLinks": "<a href='https://github.com/coastalcph/brain2llm'> code </a>",
+		"comments": "",
 		"representation":"#ffffd0"
     },
     {
@@ -50,8 +72,8 @@
 		"authors": "Qinghua Zhao, <strong>Jiaang Li</strong>, Junfeng Liu, Zhongfeng Kang, Zenghui Zhou",
 		"publicationPlatform": "Expert Systems with Applications",
 		"publicationDate": "2023",
-		"codeLink": "",
-		"linkName": "",
+		"otherLinks": "",
+		"comments": "",
 		"representation":"#FFFFFF"
     },
     {
@@ -59,10 +81,10 @@
 		"title": "PokemonChat: Auditing ChatGPT for Pokemon Universe Knowledge",
 		"url": "https://arxiv.org/pdf/2306.03024.pdf",
 		"authors": "Laura Cabello, <strong>Jiaang Li</strong>, Ilias Chalkidis",
-		"publicationPlatform": "arXiv",
+		"publicationPlatform": "Preprint",
 		"publicationDate": "2023",
-		"codeLink": "",
-		"linkName": "",
+		"otherLinks": "",
+		"comments": "",
 		"representation":"#FFFFFF"
     }
   ]
