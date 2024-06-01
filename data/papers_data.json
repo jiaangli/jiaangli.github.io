@@ -7,7 +7,7 @@
 		"publicationPlatform": "Preprint",
 		"publicationDate": "2023",
 		"otherLinks": "<a href=''> code & dataset (coming soon) </a>",
-		"comments": "",
+		"comments": " ",
 		"representation":"#ffffd0"
     },
 	{
@@ -17,8 +17,8 @@
 		"authors": "Wenyan Li, <strong>Jiaang Li</strong>, Rita Ramos, Raphael Tang, Desmond Elliott",
 		"publicationPlatform": "ACL",
 		"publicationDate": "2024",
-		"otherLinks": "",
-		"comments": "",
+		"otherLinks": " ",
+		"comments": " ",
 		"representation":"#FFFFFF"
     },
 	{
@@ -28,8 +28,8 @@
 		"authors": "Constanza Fierro, <strong>Jiaang Li</strong>, Anders Søgaard",
 		"publicationPlatform": "Preprint",
 		"publicationDate": "2024",
-		"otherLinks": "",
-		"comments": "",
+		"otherLinks": " ",
+		"comments": " ",
 		"representation":"#FFFFFF"
     },
     {
@@ -39,8 +39,8 @@
 		"authors": "Yong Cao, Wenyan Li, <strong>Jiaang Li</strong>, Yifei Yuan, Daniel Hershcovich",
 		"publicationPlatform": "Preprint",
 		"publicationDate": "2024",
-		"otherLinks": "",
-		"comments": "",
+		"otherLinks": " ",
+		"comments": " ",
 		"representation":"#FFFFFF"
     },
     {
@@ -51,7 +51,7 @@
 		"publicationPlatform": "EMNLP",
 		"publicationDate": "2023",
 		"otherLinks": "<a href='https://github.com/coastalcph/CopyrightLLMs'> code </a>",
-		"comments": "",
+		"comments": " ",
 		"representation":"#ffffd0"
     },
 	{
@@ -62,7 +62,7 @@
 		"publicationPlatform": "NeurReps @ NeurIPS",
 		"publicationDate": "2023",
 		"otherLinks": "<a href='https://github.com/coastalcph/brain2llm'> code </a>",
-		"comments": "",
+		"comments": " ",
 		"representation":"#ffffd0"
     },
     {
@@ -72,8 +72,8 @@
 		"authors": "Qinghua Zhao, <strong>Jiaang Li</strong>, Junfeng Liu, Zhongfeng Kang, Zenghui Zhou",
 		"publicationPlatform": "Expert Systems with Applications",
 		"publicationDate": "2023",
-		"otherLinks": "",
-		"comments": "",
+		"otherLinks": " ",
+		"comments": " ",
 		"representation":"#FFFFFF"
     },
     {
@@ -83,8 +83,8 @@
 		"authors": "Laura Cabello, <strong>Jiaang Li</strong>, Ilias Chalkidis",
 		"publicationPlatform": "Preprint",
 		"publicationDate": "2023",
-		"otherLinks": "",
-		"comments": "",
+		"otherLinks": " ",
+		"comments": " ",
 		"representation":"#FFFFFF"
     }
   ]
