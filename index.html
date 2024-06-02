@@ -82,7 +82,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <table id="papersTable", style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;"><tbody>
+                <table id="papersTable", style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                     <!-- Papers will be dynamically added here -->
                 </tbody></table>
                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -113,10 +113,10 @@
     function createPaperRow(paper) {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td class="tdimg" style="padding:20px;width:35%;vertical-align:center">
-                <img src='${paper.image}' alt="Paper Image">
+            <td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
+                <img src='${paper.image}' alt="Paper Image" height=160px>
             </td>
-            <td class="tdcontent" style="padding:20px;width:75%;vertical-align:center", bgcolor="${paper.representation}">
+            <td class="tdcontent" style="padding:20px;width:85%;vertical-align:center", bgcolor="${paper.representation}">
                 <p>
                     <a href="${paper.url}">
                         <papertitle>${paper.title}</papertitle>
@@ -126,8 +126,8 @@
                     ${paper.authors}
                     </span>
                     <br>
-                    <strong>${paper.publicationPlatform}</strong>, ${paper.publicationDate} &nbsp
-                    <strong><font color="red">${paper.comments}</font></strong>
+                    <em>${paper.publicationPlatform}</em>, ${paper.publicationDate} &nbsp
+                    <b><font color="red">${paper.comments}</b>
                     <br>
                 </p>
                 <div class="paper">

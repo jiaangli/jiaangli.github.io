@@ -5,10 +5,12 @@
 
 .two > img {
     width: 250px;
+    height: 160px;
 }
 
 td > img {
     width: 250px;
+    height: 160px;
 }
 
 @media (max-width:760px) {

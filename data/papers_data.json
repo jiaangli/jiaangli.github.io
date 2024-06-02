@@ -43,17 +43,6 @@
 		"comments": " ",
 		"representation":"#FFFFFF"
     },
-    {
-		"image": "images/antonia2023copyright.jpg",
-		"title": "Copyright Violations and Large Language Models",
-		"url": "https://aclanthology.org/2023.emnlp-main.458/",
-		"authors": "Antonia Karamolegkou*, <strong>Jiaang Li*</strong>, Li Zhou, Anders Søgaard",
-		"publicationPlatform": "EMNLP",
-		"publicationDate": "2023",
-		"otherLinks": "<a href='https://github.com/coastalcph/CopyrightLLMs'> code </a>",
-		"comments": " ",
-		"representation":"#ffffd0"
-    },
 	{
 		"image": "images/li2023large.jpg",
 		"title": "Structural Similarities Between Language Models and Neural Response Measurements",
@@ -65,7 +54,7 @@
 		"comments": " ",
 		"representation":"#ffffd0"
     },
-    {
+	{
 		"image": "images/zhao2023is.jpg",
 		"title": "Is Word Order Considered by Foundation Models? A Comparative Task-Oriented Analysis",
 		"url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423032025",
@@ -75,6 +64,17 @@
 		"otherLinks": " ",
 		"comments": " ",
 		"representation":"#FFFFFF"
+    },
+    {
+		"image": "images/antonia2023copyright.jpg",
+		"title": "Copyright Violations and Large Language Models",
+		"url": "https://aclanthology.org/2023.emnlp-main.458/",
+		"authors": "Antonia Karamolegkou*, <strong>Jiaang Li*</strong>, Li Zhou, Anders Søgaard",
+		"publicationPlatform": "EMNLP",
+		"publicationDate": "2023",
+		"otherLinks": "<a href='https://github.com/coastalcph/CopyrightLLMs'> code </a>",
+		"comments": " ",
+		"representation":"#ffffd0"
     },
     {
 		"image": "images/cabello2023pokemonchat.jpg",
