@@ -2,7 +2,7 @@
     {
 		"image": "images/li2023implications.jpg",
 		"title": "Do Vision and Language Models Share Concepts? A Vector Space Alignment Study",
-		"url": "https://arxiv.org/pdf/2302.06555.pdf",
+		"url": "https://arxiv.org/abs/2302.06555",
 		"authors": "<strong>Jiaang Li</strong>, Yova Kementchedjhieva, Constanza Fierro, Anders Søgaard",
 		"publicationPlatform": "Preprint",
 		"publicationDate": "2023",
@@ -13,11 +13,11 @@
 	{
 		"image": "images/wenyan2024robcap.jpg",
 		"title": "Understanding Retrieval Robustness for Retrieval-Augmented Image Captioning",
-		"url": "",
+		"url": "https://arxiv.org/abs/2406.02265",
 		"authors": "Wenyan Li, <strong>Jiaang Li</strong>, Rita Ramos, Raphael Tang, Desmond Elliott",
 		"publicationPlatform": "ACL",
 		"publicationDate": "2024",
-		"otherLinks": " ",
+		"otherLinks": "<a href='https://github.com/lyan62/RobustCap'> code </a>",
 		"comments": " ",
 		"representation":"#FFFFFF"
     },
@@ -79,7 +79,7 @@
     {
 		"image": "images/cabello2023pokemonchat.jpg",
 		"title": "PokemonChat: Auditing ChatGPT for Pokemon Universe Knowledge",
-		"url": "https://arxiv.org/pdf/2306.03024.pdf",
+		"url": "https://arxiv.org/abs/2306.03024",
 		"authors": "Laura Cabello, <strong>Jiaang Li</strong>, Ilias Chalkidis",
 		"publicationPlatform": "Preprint",
 		"publicationDate": "2023",
