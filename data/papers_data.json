@@ -5,10 +5,21 @@
 		"url": "https://arxiv.org/abs/2302.06555",
 		"authors": "<strong>Jiaang Li</strong>, Yova Kementchedjhieva, Constanza Fierro, Anders Søgaard",
 		"publicationPlatform": "Preprint",
-		"publicationDate": "2023",
-		"otherLinks": "<a href=''> code & dataset (coming soon) </a>",
+		"publicationDate": "2024",
+		"otherLinks": "<a href='https://github.com/jiaangli/vision-lang-vec-align'> code </a>",
 		"comments": " ",
 		"representation":"#ffffd0"
+    },
+	{
+		"image": "images/wenyan2024foodieqa.jpg",
+		"title": "FoodieQA: A Multimodal Dataset for Fine-Grained Understanding of Chinese Food Culture",
+		"url": "https://arxiv.org/abs/2406.11030",
+		"authors": "Wenyan Li, Xinyu Zhang, <strong>Jiaang Li</strong>, Qiwei Peng, Raphael Tang, Li Zhou, Weijia Zhang, Guimin Hu, Yifei Yuan, Anders Søgaard, Daniel Hershcovich, Desmond Elliott",
+		"publicationPlatform": "Preprint",
+		"publicationDate": "2024",
+		"otherLinks": "<a href='https://github.com/lyan62/foodie-eval'> code </a>",
+		"comments": " ",
+		"representation":"#FFFFFF"
     },
 	{
 		"image": "images/wenyan2024robcap.jpg",
