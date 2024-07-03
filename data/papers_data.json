@@ -4,7 +4,7 @@
 		"title": "Do Vision and Language Models Share Concepts? A Vector Space Alignment Study",
 		"url": "https://arxiv.org/abs/2302.06555",
 		"authors": "<strong>Jiaang Li</strong>, Yova Kementchedjhieva, Constanza Fierro, Anders Søgaard",
-		"publicationPlatform": "Preprint",
+		"publicationPlatform": "TACL",
 		"publicationDate": "2024",
 		"otherLinks": "<a href='https://github.com/jiaangli/vision-lang-vec-align'> code </a>",
 		"comments": " ",
