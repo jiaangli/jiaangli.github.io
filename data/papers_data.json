@@ -15,7 +15,7 @@
 		"title": "FoodieQA: A Multimodal Dataset for Fine-Grained Understanding of Chinese Food Culture",
 		"url": "https://arxiv.org/abs/2406.11030",
 		"authors": "Wenyan Li, Xinyu Zhang, <strong>Jiaang Li</strong>, Qiwei Peng, Raphael Tang, Li Zhou, Weijia Zhang, Guimin Hu, Yifei Yuan, Anders Søgaard, Daniel Hershcovich, Desmond Elliott",
-		"publicationPlatform": "Preprint",
+		"publicationPlatform": "EMNLP",
 		"publicationDate": "2024",
 		"otherLinks": "<a href='https://github.com/lyan62/foodie-eval'> code </a>",
 		"comments": " ",
