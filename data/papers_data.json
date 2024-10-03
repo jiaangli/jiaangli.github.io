@@ -2,7 +2,7 @@
     {
 		"image": "images/li2023implications.jpg",
 		"title": "Do Vision and Language Models Share Concepts? A Vector Space Alignment Study",
-		"url": "https://arxiv.org/abs/2302.06555",
+		"url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00698/124631/Do-Vision-and-Language-Models-Share-Concepts-A",
 		"authors": "<strong>Jiaang Li</strong>, Yova Kementchedjhieva, Constanza Fierro, Anders Søgaard",
 		"publicationPlatform": "TACL",
 		"publicationDate": "2024",
@@ -29,17 +29,6 @@
 		"publicationPlatform": "ACL",
 		"publicationDate": "2024",
 		"otherLinks": "<a href='https://github.com/lyan62/RobustCap'> code </a>",
-		"comments": " ",
-		"representation":"#FFFFFF"
-    },
-	{
-		"image": "images/fierro2024does.jpg",
-		"title": "Does Instruction Tuning Make LLMs More Consistent?",
-		"url": "https://arxiv.org/abs/2404.15206",
-		"authors": "Constanza Fierro, <strong>Jiaang Li</strong>, Anders Søgaard",
-		"publicationPlatform": "Preprint",
-		"publicationDate": "2024",
-		"otherLinks": " ",
 		"comments": " ",
 		"representation":"#FFFFFF"
     },
