@@ -9,7 +9,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'G-YZ39CFPSHV');
 	</script>
 
@@ -53,9 +52,8 @@
 									<p style="text-align:center">
 										<a href="https://github.com/jiaangli">Github</a> &nbsp/&nbsp
 										<a href="https://bsky.app/profile/jiaangli.bsky.social">BlueSky</a> &nbsp/&nbsp
-										<a href="https://scholar.google.com/citations?user=RTmTPqQAAAAJ&hl=en">Google
-											Scholar</a> &nbsp/&nbsp
-										<a href="https://x.com/JIAANGLI">Twitter</a> &nbsp/&nbsp
+										<a href="https://scholar.google.com/citations?user=RTmTPqQAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+										<a href="https://x.com/JIAANGLI">X</a> &nbsp/&nbsp
 										<a href="mailto:jili@di.ku.dk">Email</a>
 									</p>
 								</td>
@@ -90,8 +88,7 @@
 						<tbody>
 							<tr>
 								<td style="padding:20px;width:100%;vertical-align:middle">
-									<heading>News</font>
-									</heading>
+									<heading>News</heading>
 									<ul>
 										<li>Sep. 2024 - One paper accepted to <a href="https://2024.emnlp.org/"> EMNLP
 												2024</a></b></li>
@@ -191,8 +188,7 @@
 								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
 									<p>
 										<a href=https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00698/124631>
-											<papertitle>Do Vision and Language Models Share Concepts? A Vector Space
-												Alignment Study</papertitle>
+											<papertitle>Do Vision and Language Models Share Concepts? A Vector Space Alignment Study</papertitle>
 										</a>
 										<br>
 										<strong>Jiaang Li</strong>,
@@ -201,7 +197,7 @@
 										<a href="https://constanzafierro.github.io/">Constanza Fierro</a>,
 										<a href="https://anderssoegaard.github.io/">Anders Søgaard</a>
 										<br>
-										<em>TACL</em>
+										<em>TACL <span class="note"> (EMNLP 2024 oral)</span></em>
 										<br>
 										<a href='https://github.com/jiaangli/VLCA'> code & data </a>
 									</p>
@@ -358,7 +354,7 @@
 								</td>
 								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
 									<p>
-										<a href=https://aclanthology.org/2023.emnlp-main.458 />
+										<a href=https://aclanthology.org/2023.emnlp-main.458>
 										<papertitle>Copyright Violations and Large Language Models</papertitle>
 										</a>
 										<br>
@@ -418,7 +414,7 @@
 								<td style="padding:20px;width:100%;vertical-align:middle">
 									<heading>Services</heading>
 									<ul>
-										<li>Reviewer: ACL 2024, NLLP workshop' 2023</li>
+										<li>Reviewer: ACL Rolling Reviewer, NLLP workshop' 2023</li>
 									</ul>
 								</td>
 							</tr>
@@ -430,12 +426,9 @@
 							<tr>
 								<td style="padding:0px">
 									<br>
-									<p style="text-align:right;">Stolen from <a href="https://jonbarron.info/">Jon
+									<p style="text-align:right;">This page design is based on a template from <a href="https://jonbarron.info/">Jon
 											Barron</a>. Big thanks! </p>
-									<p style="text-align:right;"><a href="https://hits.seeyoufarm.com"><img
-												style="text-align:right;"
-												src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fli-jiaang.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" /></a>
-									</p>
+									<p style="text-align:right;">© Jiaang Li <span class="date">2025</span></p>
 								</td>
 							</tr>
 						</tbody>
@@ -444,48 +437,6 @@
 			</tr>
 		</tbody>
 	</table>
-
-	<!-- <script>
-		function createPaperRow(paper) {
-				const row = document.createElement('tr');
-				row.innerHTML = `
-						<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-								<img src='${paper.image}' alt="Paper Image" height=160px>
-						</td>
-						<td class="tdcontent" style="padding:20px;width:85%;vertical-align:center", bgcolor="${paper.representation}">
-								<p>
-										<a href="${paper.url}">
-												<papertitle>${paper.title}</papertitle>
-										</a>
-										<br>
-										<span class="note">
-										${paper.authors}
-										</span>
-										<br>
-										<em>${paper.publicationPlatform}</em>, ${paper.publicationDate} &nbsp
-										<b><font color="red">${paper.comments}</b>
-										<br>
-								</p>
-								<div class="paper">
-										${paper.otherLinks}
-								</div>
-						</td>
-				`;
-				return row;
-		}
-
-		fetch('data/papers_data.json')
-				.then(response => response.json())
-				.then(data => {
-						const papersTable = document.getElementById('papersTable');
-						// Loop through each paper and create a row for it
-						data.forEach(paper => {
-								const row = createPaperRow(paper);
-								papersTable.appendChild(row);
-						});
-				})
-				.catch(error => console.error('Error fetching papers data:', error));
-</script> -->
 
 </body>
 
