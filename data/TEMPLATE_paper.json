@@ -1,0 +1,36 @@
+{
+  "id": "CHANGEME_yourname2026keyword",
+  "title": "CHANGEME: Your Paper Title Here",
+  "authors": [
+    {
+      "name": "Your Name",
+      "url": "",
+      "highlight": true,
+      "equal": false
+    },
+    {
+      "name": "Second Author",
+      "url": "https://...",
+      "equal": false
+    }
+  ],
+  "venue": "CHANGEME: Conference/Journal 2026",
+  "venue_note": "",
+  "paper_url": "CHANGEME: https://arxiv.org/abs/...",
+  "image": "CHANGEME: images/your_image.jpg",
+  "links": [
+    {
+      "name": "code",
+      "url": "CHANGEME: or leave empty"
+    },
+    {
+      "name": "project page",
+      "url": ""
+    },
+    {
+      "name": "data",
+      "url": ""
+    }
+  ],
+  "tldr": "CHANGEME: One or two sentences describing your paper's main contribution."
+}

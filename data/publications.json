@@ -1,0 +1,189 @@
+[
+  {
+    "id": "li2026think",
+    "title": "Thinking in Frames: How Visual Context and Test-Time Scaling Empower Video Reasoning",
+    "authors": [
+      { "name": "Chengzu Li", "url": "https://chengzu-li.github.io/", "equal": true },
+      { "name": "Zanyi Wang", "url": "https://xmz111.github.io/", "equal": true },
+      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
+      { "name": "Yi Xu", "url": "https://yix8.github.io/" },
+      { "name": "Han Zhou", "url": "https://hzhou.top/" },
+      { "name": "Huanyu Zhang", "url": "https://hwanyu112.github.io/" },
+      { "name": "Ruichuan An", "url": "https://arctanxarc.github.io/" },
+      { "name": "Dengyang Jiang", "url": "https://vvvvvjdy.github.io/" },
+      { "name": "Zhaochong An", "url": "https://zhaochongan.github.io/" },
+      { "name": "Ivan Vulić", "url": "https://sites.google.com/site/ivanvulic/" },
+      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" },
+      { "name": "Anna Korhonen", "url": "https://sites.google.com/site/annakorhonen/" }
+    ],
+    "venue": "arXiv 2026",
+    "paper_url": "https://www.arxiv.org/abs/2601.21037",
+    "image": "images/li2026think.gif",
+    "links": [
+      { "name": "project page", "url": "https://thinking-in-frames.github.io/" },
+      { "name": "code", "url": "" }
+    ],
+    "tldr": "The paper demonstrates that video generation isn't just for creating media—it's a powerful engine for visual planning and reasoning. By \"thinking in frames,\" models can better solve spatial and temporal puzzles that traditional VLMs struggle with."
+  },
+  {
+    "id": "li2025ravenea",
+    "title": "RAVENEA: A Benchmark for Multimodal Retrieval-Augmented Visual Culture Understanding",
+    "authors": [
+      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
+      { "name": "Yifei Yuan", "url": "https://yfyuan01.github.io/", "equal": true },
+      { "name": "Wenyan Li", "url": "https://wenyanli.org/" },
+      { "name": "Mohammad Aliannejadi", "url": "https://aliannejadi.com/" },
+      { "name": "Daniel Hershcovich", "url": "https://danielhers.github.io/" },
+      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" },
+      { "name": "Ivan Vulić", "url": "https://sites.google.com/site/ivanvulic/" },
+      { "name": "Wenxuan Zhang", "url": "https://isakzhang.github.io/" },
+      { "name": "Paul Pu Liang", "url": "https://pliang279.github.io/" },
+      { "name": "Yang Deng", "url": "https://dengyang17.github.io/" },
+      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" }
+    ],
+    "venue": "ICLR 2026",
+    "paper_url": "https://arxiv.org/abs/2505.14462",
+    "image": "images/li2025ravenea.jpg",
+    "links": [
+      { "name": "code", "url": "https://github.com/yfyuan01/RAVENEA" },
+      { "name": "data", "url": "https://huggingface.co/datasets/jaagli/ravenea" }
+    ],
+    "tldr": "We present RAVENEA, a large-scale benchmark with 10K+ human-ranked Wikipedia docs for culture-aware VL tasks. We find retrieval boosts lightweight VLMs, showing the power of cultural augmentation."
+  },
+  {
+    "id": "xinyi2025othello",
+    "title": "What if Othello-Playing Language Models Could See?",
+    "authors": [
+      { "name": "Xinyi Chen", "url": "https://shin-ee-chen.github.io/", "equal": true },
+      { "name": "Yifei Yuan", "url": "https://yfyuan01.github.io/", "equal": true },
+      { "name": "Jiaang Li", "url": "", "highlight": true },
+      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" },
+      { "name": "Maarten de Rijke", "url": "https://staff.fnwi.uva.nl/m.derijke/" },
+      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
+    ],
+    "venue": "EMNLP 2025",
+    "paper_url": "https://www.arxiv.org/abs/2507.14520",
+    "image": "images/xinyi2025othello.png",
+    "links": [
+      { "name": "code", "url": "https://github.com/shin-ee-chen/multimodal-othello" },
+      { "name": "data", "url": "https://huggingface.co/datasets/jaagli/othello_shuffle" }
+    ],
+    "tldr": "The paper introduces VISOTHELLO, a multi-modal model that plays Othello using both move sequences and board images. Compared to text-only models, it predicts moves more accurately and learns more robust, structured representations, suggesting visual grounding helps language models build stronger world models."
+  },
+  {
+    "id": "chatmotion2025",
+    "title": "ChatMotion: A Multimodal Multi-Agent for Human Motion Analysis",
+    "authors": [
+      { "name": "Lei Li", "url": "https://scholar.google.com.hk/citations?user=DOyVxx0AAAAJ&hl=en" },
+      { "name": "Sen Jia", "url": "https://scholar.google.com/citations?user=FcPrwXoAAAAJ&hl=zh-CN" },
+      { "name": "Jiahao Wang", "url": "" },
+      { "name": "Zhaochong An", "url": "https://danielhers.github.io/" },
+      { "name": "Jiaang Li", "url": "", "highlight": true },
+      { "name": "Jenq-Neng Hwang", "url": "https://www.ece.uw.edu/people/jenq-neng-hwang/" },
+      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" }
+    ],
+    "venue": "arXiv",
+    "paper_url": "https://arxiv.org/abs/2502.18180",
+    "image": "images/chatmotion.png",
+    "links": [],
+    "tldr": "ChatMotion is introduced, a multimodal multi-agent framework for human motion analysis that dynamically interprets user intent, decomposes complex tasks into meta-tasks, and activates specialized function modules for motion comprehension."
+  },
+  {
+    "id": "li2023implications",
+    "title": "Do Vision and Language Models Share Concepts? A Vector Space Alignment Study",
+    "authors": [
+      { "name": "Jiaang Li", "url": "", "highlight": true },
+      { "name": "Yova Kementchedjhieva", "url": "https://mbzuai.ac.ae/study/faculty/yova-kementchedjhieva/" },
+      { "name": "Constanza Fierro", "url": "https://constanzafierro.github.io/" },
+      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
+    ],
+    "venue": "TACL",
+    "venue_note": "(EMNLP 2024 oral)",
+    "paper_url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00698/124631",
+    "image": "images/li2023implications.jpg",
+    "links": [
+      { "name": "code & data", "url": "https://github.com/jiaangli/VLCA" }
+    ],
+    "tldr": "Our experiments show that LMs partially converge towards representations isomorphic to those of vision models, subject to dispersion, polysemy, and frequency, which has important implications for both multi-modal processing and the LM understanding debate."
+  },
+  {
+    "id": "wenyan2024foodieqa",
+    "title": "FoodieQA: A Multimodal Dataset for Fine-Grained Understanding of Chinese Food Culture",
+    "authors": [
+      { "name": "Wenyan Li", "url": "https://wenyanli.org/" },
+      { "name": "Xinyu Zhang", "url": "https://crystina-z.github.io/" },
+      { "name": "Jiaang Li", "url": "", "highlight": true },
+      { "name": "Qiwei Peng", "url": "https://punchwes.github.io/" },
+      { "name": "Raphael Tang", "url": "https://ralphtang.com/" },
+      { "name": "Li Zhou", "url": "https://lizhou21.github.io/" },
+      { "name": "Weijia Zhang", "url": "https://wjzhang392.github.io/" },
+      { "name": "Guimin Hu", "url": "https://lemei.github.io/" },
+      { "name": "Yifei Yuan", "url": "https://yfyuan01.github.io/" },
+      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" },
+      { "name": "Daniel Hershcovich", "url": "https://danielhers.github.io/" },
+      { "name": "Desmond Elliottd", "url": "https://elliottd.github.io/" }
+    ],
+    "venue": "EMNLP 2024",
+    "paper_url": "https://arxiv.org/abs/2406.11030",
+    "image": "images/wenyan2024foodieqa.jpg",
+    "links": [
+      { "name": "code", "url": "https://github.com/lyan62/foodie-eval" },
+      { "name": "data", "url": "https://huggingface.co/datasets/lyan62/FoodieQA" }
+    ],
+    "tldr": "In this work, we introduce FoodieQA, a manually curated, fine-grained image-text dataset capturing the intricate features of food cultures across various regions in China, and evaluates vision-language Models (VLMs) and large language models (LLMs) on newly collected, unseen food images and corresponding questions."
+  },
+  {
+    "id": "wenyan2024robcap",
+    "title": "Understanding Retrieval Robustness for Retrieval-Augmented Image Captioning",
+    "authors": [
+      { "name": "Wenyan Li", "url": "https://wenyanli.org/" },
+      { "name": "Jiaang Li", "url": "", "highlight": true },
+      { "name": "Rita Ramos", "url": "https://scholar.google.com/citations?user=1AslBsAAAAAJ&hl=en" },
+      { "name": "Raphael Tang", "url": "https://ralphtang.com/" },
+      { "name": "Desmond Elliottd", "url": "https://elliottd.github.io/" }
+    ],
+    "venue": "ACL 2024",
+    "paper_url": "https://aclanthology.org/2024.acl-long.503",
+    "image": "images/wenyan2024robcap.jpg",
+    "links": [
+      { "name": "code", "url": "https://github.com/lyan62/RobustCap" }
+    ],
+    "tldr": "We analyze the robustness of a retrieval-augmented captioning model SmallCap and propose to train the model by sampling retrieved captions from more diverse sets, which decreases the chance that the model learns to copy majority tokens, and improves both in-domain and cross-domain performance."
+  },
+  {
+    "id": "li2023large",
+    "title": "Structural Similarities Between Language Models and Neural Response Measurements",
+    "authors": [
+      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
+      { "name": "Antonia Karamolegkou", "url": "https://antoniakrm.github.io/", "equal": true },
+      { "name": "Yova Kementchedjhieva", "url": "https://mbzuai.ac.ae/study/faculty/yova-kementchedjhieva/" },
+      { "name": "Mostafa Abdou", "url": "https://scholar.google.nl/citations?user=qgbKJ24AAAAJ" },
+      { "name": "Sune Lehmann", "url": "https://scholar.google.dk/citations?hl=en&user=wvkUbiUAAAAJ" },
+      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
+    ],
+    "venue": "NeurReps @ NeurIPS 2023",
+    "paper_url": "https://proceedings.mlr.press/v228/li24a.html",
+    "image": "images/li2023large.jpg",
+    "links": [
+      { "name": "code", "url": "https://github.com/coastalcph/brain2llm" }
+    ],
+    "tldr": "This work shows that the larger neural language models get, the more their representations are structurally similar to neural response measurements from brain imaging."
+  },
+  {
+    "id": "antonia2023copyright",
+    "title": "Copyright Violations and Large Language Models",
+    "authors": [
+      { "name": "Antonia Karamolegkou", "url": "https://antoniakrm.github.io/", "equal": true },
+      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
+      { "name": "Li Zhou", "url": "https://lizhou21.github.io/" },
+      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
+    ],
+    "venue": "EMNLP 2023",
+    "paper_url": "https://aclanthology.org/2023.emnlp-main.458",
+    "image": "images/antonia2023copyright.jpg",
+    "links": [
+      { "name": "code", "url": "https://github.com/coastalcph/CopyrightLLMs" }
+    ],
+    "tldr": "We explore the issue of copyright violations and large language models through the lens of verbatim memorization, focusing on possible redistribution of copyrighted text."
+  }
+]

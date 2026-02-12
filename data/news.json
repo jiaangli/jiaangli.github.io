@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-05",
+    "content": "I will join Meta@Paris as a research scientist intern!"
+  },
+  {
+    "date": "2026-01",
+    "content": "Our paper <a href='https://arxiv.org/abs/2505.14462'>RAVENEA</a> was accepted at ICLR 2026!"
+  },
+  {
+    "date": "2025-08",
+    "content": "Our paper <a href='https://www.arxiv.org/abs/2507.14520'>VISOTHELLO</a> was accepted at EMNLP 2025!"
+  },
+  {
+    "date": "2024-09",
+    "content": "Our paper <a href='https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00698/124631'>VLCA</a> was accepted at TACL, presented at EMNLP 2024!"
+  },
+  {
+    "date": "2024-09",
+    "content": "Our paper <a href='https://arxiv.org/abs/2406.11030'>FoodieQA</a> was accepted at EMNLP 2024!"
+  },
+  {
+    "date": "2024-05",
+    "content": "Our paper <a href='https://aclanthology.org/2024.acl-long.503'>Understanding Retrieval Robustness for Retrieval-Augmented Image Captioning</a> was accepted to ACL 2024!"
+  },
+  {
+    "date": "2023-10",
+    "content": "Our paper <a href='https://proceedings.mlr.press/v228/li24a.html'>Structural Similarities Between Language Models and Neural Response Measurements</a> was accepted to NeurReps@NeurIPS 2023"
+  },
+  {
+    "date": "2023-10",
+    "content": "Our paper <a href='https://aclanthology.org/2023.emnlp-main.458'>Copyright Violations and Large Language Models</a> was accepted to EMNLP 2023!"
+  }
+]

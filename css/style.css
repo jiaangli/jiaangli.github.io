@@ -1,0 +1,54 @@
+/* Additional custom styles for the website */
+
+.news-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-list li {
+  margin-bottom: 10px;
+}
+
+.note {
+  font-style: italic;
+  color: #666;
+}
+
+papertitle {
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+name {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 28pt;
+}
+
+heading {
+  font-weight: 700;
+  font-size: 18pt;
+  display: block;
+}
+
+.tdimg {
+  padding: 10px 20px 10px 20px !important;
+}
+
+.tdimg img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.tdcontent {
+  padding: 10px 20px 10px 20px;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}

@@ -18,13 +18,17 @@
 	<meta name="author" content="Jiaang Li">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!-- Data loading and rendering modules -->
+	<script src="js/data-loader.js"></script>
+	<script src="js/renderer.js"></script>
 </head>
 
 <body>
 	<table
-		style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+		style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:25px;">
 		<tbody>
 			<tr style="padding:0px">
 				<td style="padding:0px">
@@ -32,33 +36,22 @@
 						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 						<tbody>
 							<tr style="padding:0px">
-								<td style="padding:2.5%;width:60%;vertical-align:middle">
-									<p style="text-align:center">
+								<td style="padding:2.5%;width:65%;vertical-align:top">
+									<p style="text-align:center;margin-top:0;">
 										<name>Jiaang Li</name>
 									</p>
-									I'm an <a href="https://ellis.eu/">ELLIS</a> PhD student at the <a
-										href="https://www.aicentre.dk/">Pioneer Centre for Artificial Intelligence</a>.
-									I'm honored to be advised by Prof. <a href="https://sergebelongie.github.io/">Serge
-										Belongie</a> at the <a href="https://di.ku.dk/english/">University of
-										Copenhagen</a>.
-									Previously I spent two wonderful years at <a
-										href="https://coastalcph.github.io/">CoAStaL</a>, advised by Prof. <a
-										href="https://anderssoegaard.github.io/">Anders Søgaard</a>,
-									and received my Master's degree in Computer Science at the <a
-										href="https://di.ku.dk/english/">University of Copenhagen</a>.</p>
+									<div id="bio-content">
+										<!-- Bio content will be loaded dynamically -->
+									</div>
 
-									<p style="text-align:center">
-										<a href="mailto:jili@di.ku.dk">Email</a> &nbsp/&nbsp
-										<a href="https://x.com/JIAANGLI">Twitter</a> &nbsp/&nbsp
-										<a href="https://bsky.app/profile/jiaangli.bsky.social">BlueSky</a> &nbsp/&nbsp
-										<a href="https://scholar.google.com/citations?user=RTmTPqQAAAAJ&hl=en">Google
-											Scholar</a> &nbsp/&nbsp
-										<a href="https://github.com/jiaangli">Github</a>
+									<p style="text-align:center" id="profile-links">
+										<!-- Links will be loaded dynamically -->
 									</p>
 								</td>
-								<td style="padding:1.5%;width:30%;max-width:30%">
+								<td style="padding:1.5%;width:25%;max-width:25%;vertical-align:top;padding-top:25px;">
 									<a href="images/profile.jpg"><img
-											style="width:100%;max-width:100%;border-radius:50%" alt="profile photo"
+											id="profile-image"
+											style="width:100%;max-width:100%;border-radius:0px" alt="profile photo"
 											src="images/profile.jpg" class="hoverZoomLink"></a>
 								</td>
 							</tr>
@@ -85,34 +78,8 @@
 								<td style="padding:20px;width:100%;vertical-align:middle">
 									<heading>News</heading>
 									<hr>
-									<ul class="news-list">
-										<li><strong>2026-05:</strong> I will join Meta@Paris as a research scientist
-											intern!
-										</li>
-										<li><strong>2026-01:</strong> Our paper <a
-												href="https://arxiv.org/abs/2505.14462">RAVENEA</a>
-											was accepted at ICLR 2026! </li>
-										<li><strong>2025-08:</strong> Our paper <a
-												href="https://www.arxiv.org/abs/2507.14520">VISOTHELLO</a>
-											was accepted at EMNLP 2025! </li>
-										<li><strong>2024-09:</strong> Our paper <a
-											href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00698/124631">VLCA
-											</a> was accepted at TACL, presented at EMNLP 2024!</li>
-										<li><strong>2024-09:</strong> Our paper <a
-											href="https://arxiv.org/abs/2406.11030">FoodieQA</a>
-											was accepted at EMNLP 2024! </li>
-										<li><strong>2024-05:</strong> Our paper <a
-												href="https://aclanthology.org/2024.acl-long.503">Understanding
-												Retrieval Robustness for Retrieval-Augmented Image Captioning</a>
-											was accepted to ACL 2024! </li>
-										<li><strong>2023-10:</strong> Our paper <a
-												href="https://proceedings.mlr.press/v228/li24a.html">Structural
-												Similarities Between Language Models and Neural Response
-												Measurements</a>
-											was accepted to NeurReps@NeurIPS 2023 </li>
-										<li><strong>2023-10:</strong> Our paper <a
-												href="https://aclanthology.org/2023.emnlp-main.458">Copyright Violations
-												and Large Language Models</a> was accepted to EMNLP 2023! </li>
+									<ul class="news-list" id="news-list">
+										<!-- News items will be loaded dynamically -->
 									</ul>
 								</td>
 							</tr>
@@ -122,380 +89,20 @@
 					<table
 						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 						<tbody>
-							<heading style="padding:20px;vertical-align:middle">Publications & Preprints
-							</heading>
-							<br>
-							<span class="note" style="padding:20px;vertical-align:middle">* denotes equal
-								contribution</span>
-							<hr>
-							
-							
 							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/li2026think.gif" alt="Paper Image" width="1280" height="1280">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href="https://www.arxiv.org/abs/2601.21037">
-											<papertitle>Thinking in Frames: How Visual Context and Test-Time Scaling Empower Video Reasoning</papertitle>
-										</a>
-										<br>
-										<a href="https://chengzu-li.github.io/">Chengzu Li*</a>,
-										Zanyi Wang*,
-										<strong>Jiaang Li*</strong>,
-										<a href="https://yix8.github.io/">Yi Xu</a>,
-										<a href="https://hzhou.top/">Han Zhou</a>,
-										<a href="https://hwanyu112.github.io/">Huanyu Zhang</a>,
-										<a href="https://arctanxarc.github.io/">Ruichuan An</a>,
-										<a href="https://vvvvvjdy.github.io/">Dengyang Jiang</a>,
-										<a href="https://zhaochongan.github.io/">Zhaochong An</a>,
-										<a href="https://sites.google.com/site/ivanvulic/">Ivan Vulić</a>,
-										<a href="https://sergebelongie.github.io/">Serge Belongie</a>
-										<a href="https://sites.google.com/site/annakorhonen/">Anna Korhonen</a>
-										<br>
-										<em>arXiv 2026</em>
-										<br>
-										<!-- <a href=''> project page </a> &nbsp/&nbsp -->
-										<a href=''> code </a> &nbsp/&nbsp
-										<a href=''> data </a>
-									</p>
-									<p><span class="note">TL;DR </span>
-										The paper demonstrates that video generation isn't just for creating media—it's a powerful engine for visual planning and reasoning. 
-										By "thinking in frames," models can better solve spatial and temporal puzzles that traditional VLMs struggle with.
-									</p>
+								<td style="padding:20px;width:100%;vertical-align:middle">
+									<heading>Publications & Preprints</heading>
+									<span class="note" style="display:block;margin-top:5px;margin-bottom:0;">* denotes equal contribution</span>
+									<hr style="max-width:100%;margin-bottom:0;">
 								</td>
 							</tr>
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/li2025ravenea.jpg" alt="Paper Image" width="1280" height="1280">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href="https://arxiv.org/abs/2505.14462">
-											<papertitle>RAVENEA: A Benchmark for Multimodal Retrieval-Augmented Visual
-												Culture Understanding</papertitle>
-										</a>
-										<br>
-										<strong>Jiaang Li*</strong>,
-										<a href="https://yfyuan01.github.io/">Yifei Yuan*</a>,
-										<a href="https://wenyanli.org/">Wenyan Li</a>,
-										<a href="https://aliannejadi.com/">Mohammad Aliannejadi</a>,
-										<a href="https://danielhers.github.io/">Daniel Hershcovich</a>,
-										<a href="https://anderssoegaard.github.io/">Anders Søgaard</a>,
-										<a href="https://sites.google.com/site/ivanvulic/">Ivan Vulić</a>,
-										<a href="https://isakzhang.github.io/">Wenxuan Zhang</a>,
-										<a href="https://pliang279.github.io/">Paul Pu Liang</a>,
-										<a href="https://dengyang17.github.io/">Yang Deng</a>,
-										<a href="https://sergebelongie.github.io/">Serge Belongie</a>
-										<br>
-										<em>ICLR 2026</em>
-										<br>
-										<!-- <a href=''> project page </a> &nbsp/&nbsp -->
-										<a href=''> code </a> &nbsp/&nbsp
-										<a href=''> data </a>
-									</p>
-									<p><span class="note">TL;DR </span>
-										We present RAVENEA, a large-scale benchmark with 10K+ human-ranked Wikipedia
-										docs for culture-aware VL tasks.
-										We find retrieval boosts lightweight VLMs, showing the power of cultural
-										augmentation.
-									</p>
-								</td>
-							</tr>
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/xinyi2025othello.png" alt="Paper Image" width="1280" height="1280">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href="https://www.arxiv.org/abs/2507.14520">
-											<papertitle>What if Othello-Playing Language Models Could See?</papertitle>
-										</a>
-										<br>
-										<a href="https://shin-ee-chen.github.io/">Xinyi Chen*</a>,
-										<a href="https://yfyuan01.github.io/">Yifei Yuan*</a>,
-										<strong>Jiaang Li</strong>,
-										<a href="https://sergebelongie.github.io/">Serge Belongie</a>,
-										<a href="https://staff.fnwi.uva.nl/m.derijke/">Maarten de Rijke</a>,
-										<a href="https://anderssoegaard.github.io/">Anders Søgaard</a>,
-										<br>
-										<em>EMNLP 2025</em>
-										<br>
-									</p>
-									<p><span class="note">TL;DR </span>
-										The paper introduces VISOTHELLO, a multi-modal model that plays Othello using
-										both move sequences and board images. Compared to text-only models,
-										it predicts moves more accurately and learns more robust, structured
-										representations, suggesting visual grounding helps language models build
-										stronger world models.
-									</p>
-								</td>
-							</tr>
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/chatmotion.png" alt="Paper Image" width="1280" height="1280">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href="https://arxiv.org/abs/2502.18180">
-											<papertitle>ChatMotion: A Multimodal Multi-Agent for Human Motion Analysis
-											</papertitle>
-										</a>
-										<br>
-										<a href="https://scholar.google.com.hk/citations?user=DOyVxx0AAAAJ&hl=en">Lei
-											Li</a>,
-										<a href="https://scholar.google.com/citations?user=FcPrwXoAAAAJ&hl=zh-CN">Sen
-											Jia</a>,
-										Jiahao Wang,
-										<a href="https://danielhers.github.io/">Zhaochong An</a>,
-										<strong>Jiaang Li</strong>,
-										<a href="https://www.ece.uw.edu/people/jenq-neng-hwang/">Jenq-Neng Hwang</a>,
-										<a href="https://sergebelongie.github.io/">Serge Belongie</a>
-										<br>
-										<em>arXiv</em>
-										<br>
-									</p>
-									<p><span class="note">TL;DR </span>
-										ChatMotion is introduced, a multimodal multi-agent framework for human motion
-										analysis that dynamically interprets user intent,
-										decomposes complex tasks into meta-tasks, and activates specialized function
-										modules for motion comprehension.
-									</p>
-								</td>
-							</tr>
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/li2023implications.jpg" alt="Paper Image">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href=https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00698/124631>
-											<papertitle>Do Vision and Language Models Share Concepts? A Vector Space
-												Alignment Study</papertitle>
-										</a>
-										<br>
-										<strong>Jiaang Li</strong>,
-										<a href="https://mbzuai.ac.ae/study/faculty/yova-kementchedjhieva/">Yova
-											Kementchedjhieva</a>,
-										<a href="https://constanzafierro.github.io/">Constanza Fierro</a>,
-										<a href="https://anderssoegaard.github.io/">Anders Søgaard</a>
-										<br>
-										<em>TACL <span class="note"> (EMNLP 2024 oral)</span></em>
-										<br>
-										<a href='https://github.com/jiaangli/VLCA'> code & data </a>
-									</p>
-									<p><span class="note">TL;DR </span>
-										Our experiments show that LMs partially converge towards representations
-										isomorphic to those of vision models,
-										subject to dispersion, polysemy, and frequency, which has important implications
-										for both multi-modal processing and the LM understanding debate.
-									</p>
-								</td>
-							</tr>
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/wenyan2024foodieqa.jpg" alt="Paper Image">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href=https://arxiv.org/abs/2406.11030>
-											<papertitle>FoodieQA: A Multimodal Dataset for Fine-Grained Understanding of
-												Chinese Food Culture</papertitle>
-										</a>
-										<br>
-										<a href="https://wenyanli.org/">Wenyan Li</a>,
-										<a href="https://crystina-z.github.io/">Xinyu Zhang</a>,
-										<strong>Jiaang Li</strong>,
-										<a href="https://punchwes.github.io/">Qiwei Peng</a>,
-										<a href="https://ralphtang.com/">Raphael Tang</a>,
-										<a href="https://lizhou21.github.io/">Li Zhou</a>,
-										<a href="https://wjzhang392.github.io/">Weijia Zhang</a>,
-										<a href="https://lemei.github.io/">Guimin Hu</a>,
-										<a href="https://yfyuan01.github.io/">Yifei Yuan</a>,
-										<a href="https://anderssoegaard.github.io/">Anders Søgaard</a>,
-										<a href="https://danielhers.github.io/">Daniel Hershcovich</a>,
-										<a href="https://elliottd.github.io/">Desmond Elliottd</a>
-										<br>
-										<em>EMNLP 2024</em>
-										<br>
-										<a href='https://github.com/lyan62/foodie-eval'> code </a> &nbsp/&nbsp
-										<a href='https://huggingface.co/datasets/lyan62/FoodieQA'> data </a>
-									</p>
-									<p><span class="note">TL;DR </span>
-										In this work, we introduce FoodieQA, a manually curated, fine-grained image-text
-										dataset capturing the intricate features of
-										food cultures across various regions in China, and evaluates vision-language
-										Models (VLMs) and large language models (LLMs)
-										on newly collected, unseen food images and corresponding questions.
-									</p>
-								</td>
-							</tr>
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/wenyan2024robcap.jpg" alt="Paper Image">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href=https://aclanthology.org/2024.acl-long.503 />
-										<papertitle>Understanding Retrieval Robustness for Retrieval-Augmented Image
-											Captioning</papertitle>
-										</a>
-										<br>
-										<a href="https://wenyanli.org/">Wenyan Li</a>,
-										<strong>Jiaang Li</strong>,
-										<a href="https://scholar.google.com/citations?user=1AslBsAAAAAJ&hl=en">Rita
-											Ramos</a>,
-										<a href="https://ralphtang.com/">Raphael Tang</a>,
-										<a href="https://elliottd.github.io/">Desmond Elliottd</a>
-										<br>
-										<em>ACL 2024</em>
-										<br>
-										<a href='https://github.com/lyan62/RobustCap'> code </a>
-									</p>
-									<p><span class="note">TL;DR </span>
-										We analyze the robustness of a retrieval-augmented captioning model SmallCap and
-										propose to train the model by sampling retrieved
-										captions from more diverse sets, which decreases the chance that the model
-										learns to copy majority tokens, and improves both
-										in-domain and cross-domain performance.
-									</p>
-								</td>
-							</tr>
-
-
-							<!-- <tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/yong2024gpt4v.jpg" alt="Paper Image">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href=https://arxiv.org/abs/2402.06015>
-											<papertitle>Exploring Visual Culture Awareness in GPT-4V: A Comprehensive
-												Probing</papertitle>
-										</a>
-										<br>
-										<a href="https://yongcaoplus.github.io/">Yong Cao</a>,
-										<a href="https://wenyanli.org/">Wenyan Li</a>,
-										<strong>Jiaang Li</strong>,
-										<a href="https://yfyuan01.github.io/">Yifei Yuan</a>,
-										<a href="https://danielhers.github.io/">Daniel Hershcovich</a>
-										<br>
-										<em>arXiv</em>
-										<br>
-									</p>
-									<p><span class="note">TL;DR </span>
-										We empirically show that GPT-4V excels at identifying cultural concepts but
-										still exhibits weaker performance
-										in low-resource languages, such as Tamil and Swahili, suggesting a promising
-										solution for future visual cultural benchmark construction.
-									</p>
-								</td>
-							</tr> -->
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/li2023large.jpg" alt="Paper Image">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href=https://proceedings.mlr.press/v228/li24a.html>
-											<papertitle>Structural Similarities Between Language Models and Neural
-												Response Measurements</papertitle>
-										</a>
-										<br>
-										<strong>Jiaang Li*</strong>,
-										<a href="https://antoniakrm.github.io/">Antonia Karamolegkou*</a>,
-										<a href="https://mbzuai.ac.ae/study/faculty/yova-kementchedjhieva/">Yova
-											Kementchedjhieva</a>,
-										<a href="https://scholar.google.nl/citations?user=qgbKJ24AAAAJ">Mostafa
-											Abdou</a>,
-										<a href="https://scholar.google.dk/citations?hl=en&user=wvkUbiUAAAAJ">Sune
-											Lehmann</a>,
-										<a href="https://anderssoegaard.github.io/">Anders Søgaard</a>
-										<br>
-										<em>NeurReps @ NeurIPS 2023</em>
-										<br>
-										<a href='https://github.com/coastalcph/brain2llm'> code </a>
-									</p>
-									<p><span class="note">TL;DR </span>
-										This work shows that the larger neural language models get, the more their
-										representations are structurally similar to
-										neural response measurements from brain imaging.
-									</p>
-								</td>
-							</tr>
-
-
-							<tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/antonia2023copyright.jpg" alt="Paper Image">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href=https://aclanthology.org/2023.emnlp-main.458>
-											<papertitle>Copyright Violations and Large Language Models</papertitle>
-										</a>
-										<br>
-										<a href="https://antoniakrm.github.io/">Antonia Karamolegkou*</a>,
-										<strong>Jiaang Li*</strong>,
-										<a href="https://lizhou21.github.io/">Li Zhou</a>,
-										<a href="https://anderssoegaard.github.io/">Anders Søgaard</a>
-										<br>
-										<em>EMNLP 2023</em>
-										<br>
-										<a href='https://github.com/coastalcph/CopyrightLLMs'> code </a>
-									</p>
-									<p><span class="note">TL;DR </span>
-										We explore the issue of copyright violations and large language models through
-										the lens of verbatim memorization,
-										focusing on possible redistribution of copyrighted text.
-									</p>
-								</td>
-							</tr>
-
-
-							<!-- <tr>
-								<td class="tdimg" style="padding:20px;width:25%;vertical-align:center">
-									<img src="images/cabello2023pokemonchat.jpg" alt="Paper Image">
-								</td>
-								<td class="tdcontent" style="width:75%;vertical-align:center" , bgcolor="#FFFFFF">
-									<p>
-										<a href=https://arxiv.org/abs/2306.03024>
-											<papertitle>PokemonChat: Auditing ChatGPT for Pokemon Universe Knowledge
-											</papertitle>
-										</a>
-										<br>
-										<a href="https://lautel.github.io/">Laura Cabello</a>,
-										<strong>Jiaang Li</strong>,
-										<a href="https://iliaschalkidis.github.io/">Ilias Chalkidis</a>
-										<br>
-										<em>arXiv</em>
-										<br>
-									</p>
-									<p><span class="note">TL;DR </span>
-										We probe ChatGPT for its conversational understanding and introduces a
-										conversational framework (protocol)
-										that can be adopted in future studies to assess ChatGPT's ability to generalize,
-										combine features, and to acquire
-										and reason over newly introduced knowledge from human feedback.
-									</p>
-								</td>
-							</tr> -->
-
-
+						</tbody>
+					</table>
+					
+					<table
+						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+						<tbody id="publications-list">
+							<!-- Publications will be loaded dynamically -->
 						</tbody>
 					</table>
 					<table
@@ -531,6 +138,14 @@
 		</tbody>
 	</table>
 
+	<!-- Initialize and render all content -->
+	<script>
+		// Wait for DOM to be fully loaded
+		document.addEventListener('DOMContentLoaded', async () => {
+			const renderer = new ContentRenderer();
+			await renderer.renderAll();
+		});
+	</script>
 
 </body>
 
