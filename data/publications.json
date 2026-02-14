@@ -45,6 +45,7 @@
     "paper_url": "https://arxiv.org/abs/2505.14462",
     "image": "images/li2025ravenea.jpg",
     "links": [
+      { "name": "project page", "url": "https://jiaangli.github.io/ravenea/" },
       { "name": "code", "url": "https://github.com/yfyuan01/RAVENEA" },
       { "name": "data", "url": "https://huggingface.co/datasets/jaagli/ravenea" }
     ],
