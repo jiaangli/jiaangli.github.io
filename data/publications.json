@@ -2,20 +2,7 @@
   {
     "id": "li2026think",
     "title": "Thinking in Frames: How Visual Context and Test-Time Scaling Empower Video Reasoning",
-    "authors": [
-      { "name": "Chengzu Li", "url": "https://chengzu-li.github.io/", "equal": true },
-      { "name": "Zanyi Wang", "url": "https://xmz111.github.io/", "equal": true },
-      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
-      { "name": "Yi Xu", "url": "https://yix8.github.io/" },
-      { "name": "Han Zhou", "url": "https://hzhou.top/" },
-      { "name": "Huanyu Zhang", "url": "https://hwanyu112.github.io/" },
-      { "name": "Ruichuan An", "url": "https://arctanxarc.github.io/" },
-      { "name": "Dengyang Jiang", "url": "https://vvvvvjdy.github.io/" },
-      { "name": "Zhaochong An", "url": "https://zhaochongan.github.io/" },
-      { "name": "Ivan Vulić", "url": "https://sites.google.com/site/ivanvulic/" },
-      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" },
-      { "name": "Anna Korhonen", "url": "https://sites.google.com/site/annakorhonen/" }
-    ],
+    "authors": ["Chengzu Li*", "Zanyi Wang*", "Jiaang Li*", "Yi Xu", "Han Zhou", "Huanyu Zhang", "Ruichuan An", "Dengyang Jiang", "Zhaochong An", "Ivan Vulić", "Serge Belongie", "Anna Korhonen"],
     "venue": "arXiv 2026",
     "paper_url": "https://www.arxiv.org/abs/2601.21037",
     "image": "images/li2026think.gif",
@@ -28,19 +15,7 @@
   {
     "id": "li2025ravenea",
     "title": "RAVENEA: A Benchmark for Multimodal Retrieval-Augmented Visual Culture Understanding",
-    "authors": [
-      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
-      { "name": "Yifei Yuan", "url": "https://yfyuan01.github.io/", "equal": true },
-      { "name": "Wenyan Li", "url": "https://wenyanli.org/" },
-      { "name": "Mohammad Aliannejadi", "url": "https://aliannejadi.com/" },
-      { "name": "Daniel Hershcovich", "url": "https://danielhers.github.io/" },
-      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" },
-      { "name": "Ivan Vulić", "url": "https://sites.google.com/site/ivanvulic/" },
-      { "name": "Wenxuan Zhang", "url": "https://isakzhang.github.io/" },
-      { "name": "Paul Pu Liang", "url": "https://pliang279.github.io/" },
-      { "name": "Yang Deng", "url": "https://dengyang17.github.io/" },
-      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" }
-    ],
+    "authors": ["Jiaang Li*", "Yifei Yuan*", "Wenyan Li", "Mohammad Aliannejadi", "Daniel Hershcovich", "Anders Søgaard", "Ivan Vulić", "Wenxuan Zhang", "Paul Pu Liang", "Yang Deng", "Serge Belongie"],
     "venue": "ICLR 2026",
     "paper_url": "https://arxiv.org/abs/2505.14462",
     "image": "images/li2025ravenea.jpg",
@@ -54,14 +29,7 @@
   {
     "id": "xinyi2025othello",
     "title": "What if Othello-Playing Language Models Could See?",
-    "authors": [
-      { "name": "Xinyi Chen", "url": "https://shin-ee-chen.github.io/", "equal": true },
-      { "name": "Yifei Yuan", "url": "https://yfyuan01.github.io/", "equal": true },
-      { "name": "Jiaang Li", "url": "", "highlight": true },
-      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" },
-      { "name": "Maarten de Rijke", "url": "https://staff.fnwi.uva.nl/m.derijke/" },
-      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
-    ],
+    "authors": ["Xinyi Chen*", "Yifei Yuan*", "Jiaang Li", "Serge Belongie", "Maarten de Rijke", "Anders Søgaard"],
     "venue": "EMNLP 2025",
     "paper_url": "https://www.arxiv.org/abs/2507.14520",
     "image": "images/xinyi2025othello.png",
@@ -74,15 +42,7 @@
   {
     "id": "chatmotion2025",
     "title": "ChatMotion: A Multimodal Multi-Agent for Human Motion Analysis",
-    "authors": [
-      { "name": "Lei Li", "url": "https://scholar.google.com.hk/citations?user=DOyVxx0AAAAJ&hl=en" },
-      { "name": "Sen Jia", "url": "https://scholar.google.com/citations?user=FcPrwXoAAAAJ&hl=zh-CN" },
-      { "name": "Jiahao Wang", "url": "" },
-      { "name": "Zhaochong An", "url": "https://danielhers.github.io/" },
-      { "name": "Jiaang Li", "url": "", "highlight": true },
-      { "name": "Jenq-Neng Hwang", "url": "https://www.ece.uw.edu/people/jenq-neng-hwang/" },
-      { "name": "Serge Belongie", "url": "https://sergebelongie.github.io/" }
-    ],
+    "authors": ["Lei Li", "Sen Jia", "Jiahao Wang", "Zhaochong An", "Jiaang Li", "Jenq-Neng Hwang", "Serge Belongie"],
     "venue": "arXiv",
     "paper_url": "https://arxiv.org/abs/2502.18180",
     "image": "images/chatmotion.png",
@@ -92,12 +52,7 @@
   {
     "id": "li2023implications",
     "title": "Do Vision and Language Models Share Concepts? A Vector Space Alignment Study",
-    "authors": [
-      { "name": "Jiaang Li", "url": "", "highlight": true },
-      { "name": "Yova Kementchedjhieva", "url": "https://mbzuai.ac.ae/study/faculty/yova-kementchedjhieva/" },
-      { "name": "Constanza Fierro", "url": "https://constanzafierro.github.io/" },
-      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
-    ],
+    "authors": ["Jiaang Li", "Yova Kementchedjhieva", "Constanza Fierro", "Anders Søgaard"],
     "venue": "TACL",
     "venue_note": "(EMNLP 2024 oral)",
     "paper_url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00698/124631",
@@ -110,20 +65,7 @@
   {
     "id": "wenyan2024foodieqa",
     "title": "FoodieQA: A Multimodal Dataset for Fine-Grained Understanding of Chinese Food Culture",
-    "authors": [
-      { "name": "Wenyan Li", "url": "https://wenyanli.org/" },
-      { "name": "Xinyu Zhang", "url": "https://crystina-z.github.io/" },
-      { "name": "Jiaang Li", "url": "", "highlight": true },
-      { "name": "Qiwei Peng", "url": "https://punchwes.github.io/" },
-      { "name": "Raphael Tang", "url": "https://ralphtang.com/" },
-      { "name": "Li Zhou", "url": "https://lizhou21.github.io/" },
-      { "name": "Weijia Zhang", "url": "https://wjzhang392.github.io/" },
-      { "name": "Guimin Hu", "url": "https://lemei.github.io/" },
-      { "name": "Yifei Yuan", "url": "https://yfyuan01.github.io/" },
-      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" },
-      { "name": "Daniel Hershcovich", "url": "https://danielhers.github.io/" },
-      { "name": "Desmond Elliottd", "url": "https://elliottd.github.io/" }
-    ],
+    "authors": ["Wenyan Li", "Xinyu Zhang", "Jiaang Li", "Qiwei Peng", "Raphael Tang", "Li Zhou", "Weijia Zhang", "Guimin Hu", "Yifei Yuan", "Anders Søgaard", "Daniel Hershcovich", "Desmond Elliott"],
     "venue": "EMNLP 2024",
     "paper_url": "https://arxiv.org/abs/2406.11030",
     "image": "images/wenyan2024foodieqa.jpg",
@@ -136,13 +78,7 @@
   {
     "id": "wenyan2024robcap",
     "title": "Understanding Retrieval Robustness for Retrieval-Augmented Image Captioning",
-    "authors": [
-      { "name": "Wenyan Li", "url": "https://wenyanli.org/" },
-      { "name": "Jiaang Li", "url": "", "highlight": true },
-      { "name": "Rita Ramos", "url": "https://scholar.google.com/citations?user=1AslBsAAAAAJ&hl=en" },
-      { "name": "Raphael Tang", "url": "https://ralphtang.com/" },
-      { "name": "Desmond Elliottd", "url": "https://elliottd.github.io/" }
-    ],
+    "authors": ["Wenyan Li", "Jiaang Li", "Rita Ramos", "Raphael Tang", "Desmond Elliott"],
     "venue": "ACL 2024",
     "paper_url": "https://aclanthology.org/2024.acl-long.503",
     "image": "images/wenyan2024robcap.jpg",
@@ -154,14 +90,7 @@
   {
     "id": "li2023large",
     "title": "Structural Similarities Between Language Models and Neural Response Measurements",
-    "authors": [
-      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
-      { "name": "Antonia Karamolegkou", "url": "https://antoniakrm.github.io/", "equal": true },
-      { "name": "Yova Kementchedjhieva", "url": "https://mbzuai.ac.ae/study/faculty/yova-kementchedjhieva/" },
-      { "name": "Mostafa Abdou", "url": "https://scholar.google.nl/citations?user=qgbKJ24AAAAJ" },
-      { "name": "Sune Lehmann", "url": "https://scholar.google.dk/citations?hl=en&user=wvkUbiUAAAAJ" },
-      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
-    ],
+    "authors": ["Jiaang Li*", "Antonia Karamolegkou*", "Yova Kementchedjhieva", "Mostafa Abdou", "Sune Lehmann", "Anders Søgaard"],
     "venue": "NeurReps @ NeurIPS 2023",
     "paper_url": "https://proceedings.mlr.press/v228/li24a.html",
     "image": "images/li2023large.jpg",
@@ -173,12 +102,7 @@
   {
     "id": "antonia2023copyright",
     "title": "Copyright Violations and Large Language Models",
-    "authors": [
-      { "name": "Antonia Karamolegkou", "url": "https://antoniakrm.github.io/", "equal": true },
-      { "name": "Jiaang Li", "url": "", "equal": true, "highlight": true },
-      { "name": "Li Zhou", "url": "https://lizhou21.github.io/" },
-      { "name": "Anders Søgaard", "url": "https://anderssoegaard.github.io/" }
-    ],
+    "authors": ["Antonia Karamolegkou*", "Jiaang Li*", "Li Zhou", "Anders Søgaard"],
     "venue": "EMNLP 2023",
     "paper_url": "https://aclanthology.org/2023.emnlp-main.458",
     "image": "images/antonia2023copyright.jpg",

@@ -17,6 +17,7 @@ jiaangli.github.io/
 ├── data/                  # JSON data files (isolated from presentation)
 │   ├── profile.json       # Personal info, bio, and links
 │   ├── news.json          # News items
+│   ├── authors.json       # Author registry (URLs & highlight flags)
 │   └── publications.json  # Publications and papers
 └── images/                # Images and media files
     ├── profile.jpg
@@ -39,10 +40,7 @@ To add a new publication, simply edit the `data/publications.json` file and add 
 {
   "id": "unique_paper_id",
   "title": "Your Paper Title",
-  "authors": [
-    { "name": "Author Name", "url": "https://author-website.com/", "highlight": true },
-    { "name": "Second Author", "url": "https://...", "equal": true }
-  ],
+  "authors": ["Author Name*", "Second Author", "Third Author"],
   "venue": "Conference/Journal Name",
   "venue_note": "(Optional note, e.g., oral presentation)",
   "paper_url": "https://arxiv.org/abs/...",
@@ -55,11 +53,18 @@ To add a new publication, simply edit the `data/publications.json` file and add 
 }
 ```
 
-### Author Fields:
-- `name`: Author's full name
-- `url`: Link to author's website (can be empty string)
-- `highlight`: Set to `true` for your own name (makes it bold)
-- `equal`: Set to `true` to mark equal contribution (adds asterisk)
+### Authors Format:
+- Authors are simple **strings** (just names)
+- Append `*` to mark equal contribution (e.g., `"Author Name*"`)
+- Author URLs and highlight flags are resolved automatically from `data/authors.json`
+
+### Adding a New Author:
+If a co-author isn't already in the registry, add them to `data/authors.json`:
+```json
+"New Author Name": { "url": "https://their-website.com/" }
+```
+- Set `"highlight": true` for your own name (renders bold)
+- Set `"url": ""` if the author has no website
 
 ### Steps:
 1. Add your paper image to the `images/` folder
@@ -126,7 +131,8 @@ Then open `http://localhost:8000` in your browser.
 1. **Adding Papers**: Just edit `data/publications.json`
 2. **Updating News**: Just edit `data/news.json`
 3. **Changing Bio**: Just edit `data/profile.json`
-4. **No HTML editing needed**: Unless changing the layout/structure
+4. **Updating Author URLs**: Just edit `data/authors.json`
+5. **No HTML editing needed**: Unless changing the layout/structure
 
 ## 📋 Migration Notes
 

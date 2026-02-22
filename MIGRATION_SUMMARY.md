@@ -33,6 +33,7 @@ js/
 data/
 ├── profile.json (bio & links)
 ├── news.json (news items)
+├── authors.json (author registry)
 └── publications.json (all papers)
 images/
 └── [all images]
@@ -51,7 +52,8 @@ Benefits:
 All content is now in clean JSON files:
 - `profile.json` - Personal information
 - `news.json` - News updates
-- `publications.json` - Research papers
+- `authors.json` - Author registry (URLs & highlight flags, defined once)
+- `publications.json` - Research papers (authors as simple name strings)
 
 ### 2. Modular JavaScript
 - `data-loader.js` - Handles fetching JSON data
@@ -72,7 +74,7 @@ All content is now in clean JSON files:
 {
   "id": "paper2026",
   "title": "My New Paper",
-  "authors": [{ "name": "Your Name", "highlight": true }],
+  "authors": ["Your Name", "Co-Author*"],
   "venue": "Conference 2026",
   "paper_url": "https://...",
   "image": "images/paper.jpg",
@@ -80,7 +82,8 @@ All content is now in clean JSON files:
   "tldr": "Description"
 }
 ```
-3. Save → Refresh. Done! ✨
+3. If there's a new co-author, add them to `data/authors.json`
+4. Save → Refresh. Done! ✨
 
 ## 📈 Statistics
 
@@ -109,6 +112,7 @@ Root Directory
 ├── data/              # 🎯 Edit these to update content
 │   ├── profile.json
 │   ├── news.json
+│   ├── authors.json
 │   └── publications.json
 └── images/            # All media files
 ```
@@ -197,8 +201,9 @@ Three documentation files have been created:
 Your website is ready to use! To add new content:
 
 1. **New Paper?** → Edit `data/publications.json`
-2. **New News?** → Edit `data/news.json`
-3. **Update Bio?** → Edit `data/profile.json`
+2. **New Co-Author?** → Add to `data/authors.json`
+3. **New News?** → Edit `data/news.json`
+4. **Update Bio?** → Edit `data/profile.json`
 
 That's it! No HTML editing needed. 🎊
 

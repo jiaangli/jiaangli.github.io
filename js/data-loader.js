@@ -38,6 +38,10 @@ class DataLoader {
   async loadPublications() {
     return this.loadJSON('data/publications.json');
   }
+
+  async loadAuthors() {
+    return this.loadJSON('data/authors.json');
+  }
 }
 
 // Export for use in other modules

@@ -16,7 +16,7 @@ class ContentRenderer {
       const profile = await this.loader.loadProfile();
       
       // Update name
-      const nameElement = document.querySelector('name');
+      const nameElement = document.querySelector('.profile-name');
       if (nameElement) {
         nameElement.textContent = profile.name;
       }
@@ -56,7 +56,7 @@ class ContentRenderer {
       
       if (newsContainer) {
         newsContainer.innerHTML = newsItems
-          .map(item => `<li><strong>${item.date}:</strong> ${item.content}</li>`)
+          .map(item => `<li><span class="news-date">${item.date}</span><span class="news-text">${item.content}</span></li>`)
           .join('\n');
       }
     } catch (error) {
@@ -67,50 +67,43 @@ class ContentRenderer {
   /**
    * Render a single publication entry
    */
-  renderPublication(pub) {
-    // Render authors
-    const authorsHTML = pub.authors.map(author => {
-      const authorName = author.highlight ? `<strong>${author.name}</strong>` : author.name;
-      const authorLink = author.url ? `<a href="${author.url}">${authorName}</a>` : authorName;
-      const equalMark = author.equal ? '*' : '';
-      return authorLink + equalMark;
-    }).join(',\n');
+  renderPublication(pub, authorsRegistry) {
+    // Render authors — each entry is a string like "Name" or "Name*"
+    const authorsHTML = pub.authors.map(nameStr => {
+      const equal = nameStr.endsWith('*');
+      const name = equal ? nameStr.slice(0, -1) : nameStr;
+      const info = authorsRegistry[name] || {};
+      const displayName = info.highlight ? `<strong>${name}</strong>` : name;
+      const linked = info.url ? `<a href="${info.url}">${displayName}</a>` : displayName;
+      return linked + (equal ? '*' : '');
+    }).join(', ');
 
     // Render links
     const linksHTML = pub.links.length > 0
       ? pub.links
-          .filter(link => link.url) // Only show links with URLs
+          .filter(link => link.url)
           .map(link => `<a href="${link.url}">${link.name}</a>`)
           .join(' &nbsp/&nbsp\n')
       : '';
 
     // Render venue with optional note
     const venueHTML = pub.venue_note 
-      ? `${pub.venue} <span class="note">${pub.venue_note}</span>`
+      ? `${pub.venue} <span class="note" style="display:inline;margin:0;">${pub.venue_note}</span>`
       : pub.venue;
 
     return `
-      <tr>
-        <td class="tdimg" style="width:25%;vertical-align:center">
-          <img src="${pub.image}" alt="${pub.title}">
-        </td>
-        <td class="tdcontent" style="width:75%;vertical-align:center" bgcolor="#FFFFFF">
-          <p>
-            <a href="${pub.paper_url}">
-              <papertitle>${pub.title}</papertitle>
-            </a>
-            <br>
-            ${authorsHTML}
-            <br>
-            <em>${venueHTML}</em>
-            <br>
-            ${linksHTML}
-          </p>
-          <p><span class="note">TL;DR </span>
-            ${pub.tldr}
-          </p>
-        </td>
-      </tr>
+      <div class="pub-entry">
+        <div class="pub-img">
+          <img src="${pub.image}" alt="${pub.title}" loading="lazy">
+        </div>
+        <div class="pub-content">
+          <a class="pub-title" href="${pub.paper_url}">${pub.title}</a>
+          <div class="pub-authors">${authorsHTML}</div>
+          <div class="pub-venue">${venueHTML}</div>
+          <div class="pub-links">${linksHTML}</div>
+          <div class="pub-tldr"><span class="note">TL;DR </span>${pub.tldr}</div>
+        </div>
+      </div>
     `;
   }
 
@@ -119,12 +112,15 @@ class ContentRenderer {
    */
   async renderPublications() {
     try {
-      const publications = await this.loader.loadPublications();
+      const [publications, authorsRegistry] = await Promise.all([
+        this.loader.loadPublications(),
+        this.loader.loadAuthors()
+      ]);
       const pubContainer = document.getElementById('publications-list');
       
       if (pubContainer) {
         pubContainer.innerHTML = publications
-          .map(pub => this.renderPublication(pub))
+          .map(pub => this.renderPublication(pub, authorsRegistry))
           .join('\n');
       }
     } catch (error) {

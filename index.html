@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ39CFPSHV"></script>
 	<script>
@@ -13,134 +13,72 @@
 	</script>
 
 	<title>Jiaang Li</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 	<meta name="author" content="Jiaang Li">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
+
 	<!-- Data loading and rendering modules -->
 	<script src="js/data-loader.js"></script>
 	<script src="js/renderer.js"></script>
 </head>
 
 <body>
-	<table
-		style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:25px;">
-		<tbody>
-			<tr style="padding:0px">
-				<td style="padding:0px">
-					<table
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-						<tbody>
-							<tr style="padding:0px">
-								<td style="padding:2.5%;width:65%;vertical-align:top">
-									<p style="text-align:center;margin-top:0;">
-										<name>Jiaang Li</name>
-									</p>
-									<div id="bio-content">
-										<!-- Bio content will be loaded dynamically -->
-									</div>
+	<div class="container">
+		<!-- Hero / Profile Section -->
+		<section class="profile-section">
+			<div class="profile-text">
+				<h1 class="profile-name">Jiaang Li</h1>
+				<div id="bio-content">
+					<!-- Bio content will be loaded dynamically -->
+				</div>
+				<div class="profile-links" id="profile-links">
+					<!-- Links will be loaded dynamically -->
+				</div>
+			</div>
+			<div class="profile-photo">
+				<a href="images/profile.jpg">
+					<img id="profile-image" alt="profile photo" src="images/profile.jpg">
+				</a>
+			</div>
+		</section>
 
-									<p style="text-align:center" id="profile-links">
-										<!-- Links will be loaded dynamically -->
-									</p>
-								</td>
-								<td style="padding:1.5%;width:25%;max-width:25%;vertical-align:top;padding-top:25px;">
-									<a href="images/profile.jpg"><img
-											id="profile-image"
-											style="width:100%;max-width:100%;border-radius:0px" alt="profile photo"
-											src="images/profile.jpg" class="hoverZoomLink"></a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+		<!-- News Section -->
+		<section class="content-section">
+			<h2 class="section-heading">News</h2>
+			<ul class="news-list" id="news-list">
+				<!-- News items will be loaded dynamically -->
+			</ul>
+		</section>
 
-					<!-- <table
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-						<tbody>
-							<tr>
-								<td style="padding:20px;width:100%;vertical-align:middle">
-									<heading>Research</heading>
-									<p>
-									</p>
-								</td>
-							</tr>
-						</tbody>
-					</table> -->
+		<!-- Publications Section -->
+		<section class="content-section">
+			<h2 class="section-heading">Publications & Preprints</h2>
+			<span class="note">* denotes equal contribution</span>
+			<div id="publications-list" class="publications-list">
+				<!-- Publications will be loaded dynamically -->
+			</div>
+		</section>
 
-					<table
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-						<tbody>
-							<tr>
-								<td style="padding:20px;width:100%;vertical-align:middle">
-									<heading>News</heading>
-									<hr>
-									<ul class="news-list" id="news-list">
-										<!-- News items will be loaded dynamically -->
-									</ul>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+		<!-- Services Section -->
+		<section class="content-section">
+			<h2 class="section-heading">Services</h2>
+			<ul class="services-list">
+				<li>Reviewer: ICML 2026, ICLR 2026, ACL Rolling Reviewer, NLLP workshop' 2023</li>
+			</ul>
+		</section>
 
-					<table
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-						<tbody>
-							<tr>
-								<td style="padding:20px;width:100%;vertical-align:middle">
-									<heading>Publications & Preprints</heading>
-									<span class="note" style="display:block;margin-top:5px;margin-bottom:0;">* denotes equal contribution</span>
-									<hr style="max-width:100%;margin-bottom:0;">
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<table
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-						<tbody id="publications-list">
-							<!-- Publications will be loaded dynamically -->
-						</tbody>
-					</table>
-					<table
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-						<tbody>
-							<tr>
-								<td style="padding:20px;width:100%;vertical-align:middle">
-									<heading>Services</heading>
-									<hr>
-									<ul>
-										<li>Reviewer: ICML 2026, ICLR 2026, ACL Rolling Reviewer, NLLP workshop' 2023</li>
-									</ul>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table
-						style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-						<tbody>
-							<tr>
-								<td style="padding:0px">
-									<br>
-									<p style="text-align:right;">This page design is based on a template from <a
-											href="https://jonbarron.info/">Jon
-											Barron</a>. Big thanks! </p>
-									<p style="text-align:right;">© Jiaang Li <span class="date">2026</span></p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+		<!-- Footer -->
+		<footer class="site-footer">
+			<p>This page design is based on a template from <a href="https://jonbarron.info/">Jon Barron</a>. Big thanks!</p>
+			<p>&copy; Jiaang Li <span class="date">2026</span></p>
+		</footer>
+	</div>
 
 	<!-- Initialize and render all content -->
 	<script>
-		// Wait for DOM to be fully loaded
 		document.addEventListener('DOMContentLoaded', async () => {
 			const renderer = new ContentRenderer();
 			await renderer.renderAll();

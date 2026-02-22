@@ -20,6 +20,7 @@ That's it! No HTML editing needed. Just edit JSON files and refresh.
 ├── data/                  # 🎯 EDIT THESE for content updates
 │   ├── profile.json       # Your bio and links
 │   ├── news.json          # News items
+│   ├── authors.json       # Author registry (URLs & flags)
 │   ├── publications.json  # Your papers
 │   └── TEMPLATE_paper.json # Template for new papers
 └── images/                # Images and media
@@ -39,9 +40,7 @@ That's it! No HTML editing needed. Just edit JSON files and refresh.
 {
   "id": "smith2026awesome",
   "title": "My Awesome Paper",
-  "authors": [
-    { "name": "Your Name", "url": "", "highlight": true }
-  ],
+  "authors": ["Your Name", "Co-Author"],
   "venue": "NeurIPS 2026",
   "paper_url": "https://arxiv.org/abs/...",
   "image": "images/paper2026.jpg",

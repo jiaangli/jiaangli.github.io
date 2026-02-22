@@ -29,6 +29,12 @@
 │  │  │- Name, bio   │ │- News items  │ │   .json    │  │  │
 │  │  │- Links       │ │- Dates       │ │- Papers    │  │  │
 │  │  └──────────────┘ └──────────────┘ └──────────┘  │  │
+│  │                                    ┌──────────┐  │  │
+│  │                                    │authors   │  │  │
+│  │                                    │  .json   │  │  │
+│  │                                    │- URLs    │  │  │
+│  │                                    │- Flags   │  │  │
+│  │                                    └──────────┘  │  │
 │  └───────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -53,9 +59,11 @@ ContentRenderer.renderAll() called
         ├─────────────────┬─────────────────┐
         ▼                 ▼                 ▼
   Load profile      Load news      Load publications
+        │                 │           + Load authors
         │                 │                 │
         ▼                 ▼                 ▼
-   Render bio      Render news      Render papers
+   Render bio      Render news      Resolve authors
+        │                 │          & Render papers
         │                 │                 │
         └─────────────────┴─────────────────┘
                           │
@@ -81,6 +89,8 @@ ContentRenderer.renderAll() called
 │  ┌────────────────────────────────────────────┐    │
 │  │  renderPublications()                      │    │
 │  │  - Fetches publications.json               │    │
+│  │  - Fetches authors.json (registry)         │    │
+│  │  - Resolves author names → URLs/highlight  │    │
 │  │  - Renders each paper with:                │    │
 │  │    • Title, authors, venue                 │    │
 │  │    • Image, links, TL;DR                   │    │
@@ -127,7 +137,8 @@ Want to add paper
 Open data/publications.json
     │
     ▼
-Copy template, paste at top
+Add author names (strings)
+URLs resolved from authors.json
     │
     ▼
 Fill in fields (structured)
@@ -166,6 +177,7 @@ jiaangli.github.io/
 │   └── data/
 │       ├── profile.json        (Personal info)
 │       ├── news.json           (News updates)
+│       ├── authors.json        (Author registry: URLs & flags)
 │       ├── publications.json   (Research papers)
 │       └── TEMPLATE_paper.json (Template for new papers)
 │

@@ -1,19 +1,7 @@
 {
   "id": "CHANGEME_yourname2026keyword",
   "title": "CHANGEME: Your Paper Title Here",
-  "authors": [
-    {
-      "name": "Your Name",
-      "url": "",
-      "highlight": true,
-      "equal": false
-    },
-    {
-      "name": "Second Author",
-      "url": "https://...",
-      "equal": false
-    }
-  ],
+  "authors": ["Your Name", "Second Author*", "Third Author"],
   "venue": "CHANGEME: Conference/Journal 2026",
   "venue_note": "",
   "paper_url": "CHANGEME: https://arxiv.org/abs/...",

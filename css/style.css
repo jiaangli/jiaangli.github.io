@@ -1,54 +1,382 @@
-/* Additional custom styles for the website */
+/* ============================================
+   Modern Responsive Academic Website Styles
+   ============================================ */
 
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+  background: #fafafa;
+  color: #333;
+}
+
+/* --- Container --- */
+.container {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 24px 16px;
+}
+
+/* --- Profile Section --- */
+.profile-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.profile-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-name {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px 0;
+  text-align: center;
+  color: #222;
+}
+
+.profile-text p {
+  margin: 0 0 10px 0;
+  line-height: 1.65;
+}
+
+.profile-links {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+  width: 200px;
+  padding-top: 8px;
+}
+
+.profile-photo img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+/* --- Section Headings --- */
+.content-section {
+  margin-bottom: 32px;
+}
+
+.section-heading {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 4px 0;
+  color: #222;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* --- Note / Subtitle --- */
+.note {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  display: block;
+  margin: 4px 0 12px 0;
+}
+
+/* --- News List --- */
 .news-list {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  max-height: 240px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.news-list::-webkit-scrollbar {
+  width: 4px;
+}
+.news-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.news-list::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 2px;
 }
 
 .news-list li {
-  margin-bottom: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 0;
+  padding: 4px 0;
+  line-height: 1.5;
+  font-size: 15px;
 }
 
-.note {
-  font-style: italic;
-  color: #666;
+.news-date {
+  flex-shrink: 0;
+  font-size: 14px;
+  color: #222;
+  font-weight: 600;
+  min-width: 66px;
 }
 
-papertitle {
-  font-weight: 700;
-  font-size: 12pt;
+.news-text {
+  color: #444;
 }
 
-name {
-  font-family: Arial;
-  font-weight: 700;
-  font-size: 28pt;
+/* --- Publications --- */
+.publications-list {
+  margin-top: 8px;
 }
 
-heading {
-  font-weight: 700;
-  font-size: 18pt;
-  display: block;
+.pub-entry {
+  display: flex;
+  gap: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  align-items: flex-start;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.tdimg {
-  padding: 10px 20px 10px 20px !important;
+.pub-entry:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+  background: #fdf8f3;
 }
 
-.tdimg img {
+.pub-entry:last-child {
+  border-bottom: none;
+}
+
+.pub-img {
+  flex-shrink: 0;
   width: 180px;
-  height: 180px;
+}
+
+.pub-img img {
+  width: 100%;
+  height: 160px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
   display: block;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
 }
 
-.tdcontent {
-  padding: 10px 20px 10px 20px;
+.pub-content {
+  flex: 1;
+  min-width: 0;
 }
 
+.pub-content .pub-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1772d0;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: color 0.2s;
+}
+
+.pub-content .pub-title:hover {
+  color: #f09228;
+}
+
+.pub-content .pub-authors {
+  margin: 4px 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #444;
+}
+
+.pub-content .pub-authors a {
+  color: #444;
+  text-decoration: none;
+}
+
+.pub-content .pub-authors a:hover {
+  color: #1772d0;
+}
+
+.pub-content .pub-venue {
+  font-style: italic;
+  font-size: 15px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.pub-content .pub-links {
+  margin: 6px 0 4px 0;
+  font-size: 14px;
+}
+
+.pub-content .pub-links a {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.pub-content .pub-tldr {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+.pub-content .pub-tldr .note {
+  display: inline;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* --- Services List --- */
+.services-list {
+  padding-left: 20px;
+  margin: 12px 0 0 0;
+}
+
+.services-list li {
+  line-height: 1.7;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* --- Footer --- */
+.site-footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+.site-footer a {
+  color: #999;
+}
+
+.site-footer a:hover {
+  color: #f09228;
+}
+
+/* --- General HR (fallback) --- */
 hr {
   margin: 10px 0;
   border: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ============================================
+   Responsive Breakpoints
+   ============================================ */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 16px 12px;
+  }
+
+  .profile-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 160px;
+  }
+
+  .profile-text p {
+    text-align: left;
+  }
+
+  .pub-entry {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pub-img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .pub-img img {
+    height: auto;
+    max-height: 200px;
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 16px 12px 8px;
+  }
+
+  .profile-name {
+    font-size: 1.75rem;
+  }
+
+  .profile-photo {
+    width: 140px;
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+  }
+
+  .news-list li {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .news-date {
+    min-width: 58px;
+    font-size: 13px;
+  }
+
+  .pub-img {
+    max-width: 240px;
+  }
+
+  .pub-content .pub-title {
+    font-size: 15px;
+  }
+
+  .services-list {
+    padding-left: 16px;
+  }
 }
