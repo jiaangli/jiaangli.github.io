@@ -14,7 +14,7 @@ class ContentRenderer {
   async renderProfile() {
     try {
       const profile = await this.loader.loadProfile();
-      
+
       // Update name
       const nameElement = document.querySelector('.profile-name');
       if (nameElement) {
@@ -53,7 +53,7 @@ class ContentRenderer {
     try {
       const newsItems = await this.loader.loadNews();
       const newsContainer = document.getElementById('news-list');
-      
+
       if (newsContainer) {
         newsContainer.innerHTML = newsItems
           .map(item => `<li><span class="news-date">${item.date}</span><span class="news-text">${item.content}</span></li>`)
@@ -81,20 +81,20 @@ class ContentRenderer {
     // Render links
     const linksHTML = pub.links.length > 0
       ? pub.links
-          .filter(link => link.url)
-          .map(link => `<a href="${link.url}">${link.name}</a>`)
-          .join(' &nbsp/&nbsp\n')
+        .filter(link => link.url)
+        .map(link => `<a href="${link.url}">${link.name}</a>`)
+        .join(' &nbsp/&nbsp\n')
       : '';
 
     // Render venue with optional note
-    const venueHTML = pub.venue_note 
+    const venueHTML = pub.venue_note
       ? `${pub.venue} <span class="note" style="display:inline;margin:0;">${pub.venue_note}</span>`
       : pub.venue;
 
     return `
       <div class="pub-entry">
         <div class="pub-img">
-          <img src="${pub.image}" alt="${pub.title}" loading="lazy">
+          <img src="${pub.image}" alt="${pub.title}">
         </div>
         <div class="pub-content">
           <a class="pub-title" href="${pub.paper_url}">${pub.title}</a>
@@ -117,7 +117,7 @@ class ContentRenderer {
         this.loader.loadAuthors()
       ]);
       const pubContainer = document.getElementById('publications-list');
-      
+
       if (pubContainer) {
         pubContainer.innerHTML = publications
           .map(pub => this.renderPublication(pub, authorsRegistry))
