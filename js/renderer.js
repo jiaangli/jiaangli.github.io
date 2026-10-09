@@ -86,10 +86,14 @@ class ContentRenderer {
         .join(' &nbsp/&nbsp\n')
       : '';
 
-    // Render venue with optional note
+    // Render venue with optional note (auto-highlight "Oral" in red, drop parentheses)
+    const highlightOral = (text) =>
+      text
+        .replace(/\s*\(\s*(oral)\s*\)/gi, ' $1')
+        .replace(/\b(oral)\b/gi, '<span class="oral">$1</span>');
     const venueHTML = pub.venue_note
-      ? `${pub.venue} <span class="note" style="display:inline;margin:0;">${pub.venue_note}</span>`
-      : pub.venue;
+      ? `${highlightOral(pub.venue)} <span class="note" style="display:inline;margin:0;">${highlightOral(pub.venue_note)}</span>`
+      : highlightOral(pub.venue);
 
     return `
       <div class="pub-entry">
@@ -101,7 +105,6 @@ class ContentRenderer {
           <div class="pub-authors">${authorsHTML}</div>
           <div class="pub-venue">${venueHTML}</div>
           <div class="pub-links">${linksHTML}</div>
-          <div class="pub-tldr"><span class="note">TL;DR </span>${pub.tldr}</div>
         </div>
       </div>
     `;
@@ -120,6 +123,7 @@ class ContentRenderer {
 
       if (pubContainer) {
         pubContainer.innerHTML = publications
+          .filter(pub => !pub.hidden)
           .map(pub => this.renderPublication(pub, authorsRegistry))
           .join('\n');
       }
